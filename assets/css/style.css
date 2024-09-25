@@ -1,0 +1,220 @@
+body {
+    background-color: #81B9AF;
+    font-family: sans-serif;
+    height: auto;
+    width: 95vw;
+}
+/* telefonos*/
+@media only screen and (max-width : 900px )
+{
+    .back {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 70%;
+        height: 40vh;
+        background-color: #DFE5E4;
+        padding: 30px;
+        border-radius: 50px;
+        border: 10px #2c44429f solid;
+    }
+
+
+    .user {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+        border: 10px #2c44429f solid;
+        z-index: -1;
+
+    }
+
+    .user i {
+        font-size: 70px;
+        color: #000;
+        position: relative;
+        top: 10px;
+        left: 20px;
+
+    }
+
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #ccc;
+    }
+
+    button {
+        width: 150px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        flex-wrap: nowrap;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+    #is {
+        border: 1px solid black;
+        background-color: #E3E3E3;
+        color: #000000;
+    }
+
+    #rg {
+        background-color: #2C2C2C;
+        color: #ffffff;
+    }
+
+
+    .bo {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .lpass {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .texd {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    button:hover {
+        background-color: #0069d9;
+    }
+
+    .forgot {
+        text-align: center;
+
+        color: #000000;
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (min-width : 901px) {
+
+
+    .container {
+        width: 350px;
+        height: 250px;
+        background-color: #DFE5E4;
+        padding: 30px;
+        border-radius: 50px;
+        border: 10px #2c44429f solid;
+
+
+    }
+
+
+    .user {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+        border: 10px #2c44429f solid;
+
+
+    }
+
+    .user i {
+        font-size: 70px;
+        color: #000;
+        position: relative;
+        top: 10px;
+        left: 20px;
+
+    }
+
+
+    .back {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 100vw;
+
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #ccc;
+    }
+
+    button {
+        width: 150px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        flex-wrap: nowrap;
+        cursor: pointer;
+    }
+
+    #is {
+        border: 1px solid black;
+        background-color: #E3E3E3;
+        color: #000000;
+    }
+
+    #rg {
+        background-color: #2C2C2C;
+        color: #ffffff;
+    }
+
+
+    .bo {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .lpass {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .texd {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    button:hover {
+        background-color: #0069d9;
+    }
+
+    .forgot {
+        text-align: center;
+
+        color: #000000;
+        cursor: pointer;
+    }
+}
