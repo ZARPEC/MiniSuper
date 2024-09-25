@@ -14,6 +14,3 @@ class LinkModel{
         return $GeLink;
     }
 }
-
-
-?>
