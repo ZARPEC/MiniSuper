@@ -9,7 +9,7 @@
         <div class="elemenBar">
         <ul>
             <li class="active"><a href="#"><span class="icon">★</span> Cuenta</a></li>
-            <li><a href="#"><span class="icon">★</span> Pedidos</a></li>
+            <li><a href="?action=login" ><span class="icon">★</span> Pedidos</a></li>
             <li><a href="#"><span class="icon">★</span> Carrito</a></li>
             <li><a href="#"><span class="icon">★</span> Cerrar Sesión</a></li>
         </ul>

@@ -7,7 +7,8 @@ class LinkModel{
         
         $GeLink = match($Link){
             "inicio" => "View/user/homeU.php",
-            "login" => "View/login.php",
+            "login" => "View/user/login.php",
+            "signUp" => "View/user/SignUp.php",
             default => "View/pages/error.php"
 
         };

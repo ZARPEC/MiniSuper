@@ -7,7 +7,7 @@ class PageController
 
     public function mostrarInicio()
     {
-        require_once("View/template.php");
+        require_once("View/Partials/template.php");
     }
 
     public function LinkPage()
