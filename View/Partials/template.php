@@ -16,6 +16,7 @@ ob_start();
     <title>Mini Super</title>
     <link rel="stylesheet" href="assets/css/userStyle.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/SidebarStyle.css">
     <script src="https://kit.fontawesome.com/19795a1502.js" crossorigin="anonymous"></script>
 </head>
 
