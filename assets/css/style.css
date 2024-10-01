@@ -1,7 +1,7 @@
 body {
     background-color: #81B9AF;
     font-family: sans-serif;
-    height: auto;
+    height: 100vh;
     width: 95vw;
 }
 /* telefonos*/
@@ -46,7 +46,7 @@ body {
     }
 
 
-    input {
+    .texd > input {
         width: 100%;
         padding: 10px;
         margin-bottom: 30px;
@@ -157,7 +157,7 @@ body {
 
     }
 
-    input {
+    .texd > input {
         width: 100%;
         padding: 10px;
         margin-bottom: 30px;

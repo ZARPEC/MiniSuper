@@ -1,6 +1,8 @@
 @media only screen and (min-width: 901px) {
+  /*estilos para inicio de usuario*/
   .MainPage {
     display: flex;
+    height: 100%;
   }
 
   .mainHomeU {
@@ -11,7 +13,6 @@
     grid-row-gap: 0px;
   }
 
- 
   .main-content {
     background-color: #d4e3e5;
     flex: 1;
@@ -105,21 +106,56 @@
     display: flex;
     flex-direction: row;
   }
+
+  /* fin estilos de inicio usuario*/
+
+  /*inicio estilos de crear cuenta*/
+  .MainSignUp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .InputArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+  }
+  .InputArea >div > input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #ccc;
+  }
+  .InputArea > div > label{
+    display:contents;
+    width: 25%;
+    height: 25%;
+  }
+  .SignUpInput{
+    display: flex;
+    margin-top: 10px;
+  }
+  /*fin estilos de crear cuenta*/
 }
 /* telefono*/
 
 @media only screen and (max-width: 900px) {
-
-    .MainPage {
-        height: 100vh;
-      }
+  .MainPage {
+    height: 100vh;
+  }
 
   .mainHomeU {
     display: flex;
     flex-wrap: wrap;
   }
 
-  
   .main-content {
     background-color: #d4e3e5;
     flex: 1;
