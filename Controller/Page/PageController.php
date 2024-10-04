@@ -17,7 +17,7 @@ class PageController
             $link=$_GET['action'];
         } else {
             //llevara a la pagina de incio
-            $link = "inicio";
+            $link = "home";
         }
         $Reply= LinkModel::LinkModel($link); //devuelde la ruta exacta de la pagina
         require_once($Reply);

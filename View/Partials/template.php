@@ -14,6 +14,7 @@ ob_start();
     <meta name="theme-color" content="#81B9AF">
     <title>MiniSuper</title>
     <title>Mini Super</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/userStyle.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/SidebarStyle.css">
