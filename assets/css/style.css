@@ -40,6 +40,11 @@ body {
     grid-area: 2 / 4 / 6 / 6;
     background-color: #607a76;
     border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
   }
 
   /* carrusel */
@@ -184,7 +189,13 @@ body {
   /* estilos productos recomendados*/
 
   .buttonsArea{
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0.5rem
+  }
+  .buttonsArea button{
+    height: 20%;
   }
 
   .productR{
@@ -193,7 +204,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    overflow:hidden;
+
     height: 70%;
   }
 
