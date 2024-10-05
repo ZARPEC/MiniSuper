@@ -5,14 +5,14 @@
         <span></span>
         <span></span>
     </div>
-    <div id="sidebar" >
+    <div id="sidebar">
         <div class="elemenBar">
-        <ul>
-            <li class="active"><a href="#"><span class="icon">★</span> Cuenta</a></li>
-            <li><a href="?action=login" ><span class="icon">★</span> Pedidos</a></li>
-            <li><a href="#"><span class="icon">★</span> Carrito</a></li>
-            <li><a href="#"><span class="icon">★</span> Cerrar Sesión</a></li>
-        </ul>
+            <ul>
+                <li class="active"><a href="?action=login"><i class="fa-solid fa-star"></i> Cuenta</a></li>
+                <li><a href="?action=homeUser"><i class="fa-solid fa-star"></i> Pedidos</a></li>
+                <li><a href="#"><i class="fa-solid fa-star"></i> Carrito</a></li>
+                <li><a href="#"><i class="fa-solid fa-star"></i> Cerrar Sesión</a></li>
+            </ul>
         </div>
     </div>
 </div>

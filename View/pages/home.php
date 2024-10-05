@@ -44,9 +44,9 @@
     </div>
     <div class="quickAccess">
         <div class="buttonsArea">
-            <button></button>
-            <button></button>
-            <button></button>
+            <button>Recomendados</button>
+            <button>Ofertas</button>
+            <button>Categorias</button>
         </div>
         <div class="productR">
             <div class="product">

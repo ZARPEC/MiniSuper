@@ -13,7 +13,7 @@
             <button id="is" class="bs">Iniciar Sesión</button>
           </div>
           <div>
-            <button id="rg" class="bs">Registrarse</button>
+            <a href="?action=signUp"><button type="" id="rg" href="" class="bs">Registrarse</button></a>
           </div>
         </div>
         <div class="lpass">
