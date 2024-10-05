@@ -7,3 +7,5 @@ use Controller\Page\PageController;
 $pagina = new PageController;
 
 $pagina->mostrarInicio();
+
+
