@@ -50,42 +50,42 @@
         </div>
         <div class="productR">
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" width="100px">
+                <img src="./assets/Images/products/aceite.webp" alt="" >
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" width="100px">
+                <img src="./assets/Images/products/aceite.webp" alt="" >
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" width="100px">
+                <img src="./assets/Images/products/aceite.webp" alt="" >
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" width="100px">
+                <img src="./assets/Images/products/aceite.webp" alt="" >
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" width="100px">
+                <img src="./assets/Images/products/aceite.webp" alt="" >
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" width="100px">
+                <img src="./assets/Images/products/aceite.webp" alt="" >
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>

@@ -195,7 +195,7 @@ body {
     margin:0.5rem
   }
   .buttonsArea button{
-    height: 20%;
+    height: 100%;
   }
 
   .productR{
@@ -212,11 +212,14 @@ body {
     color: white;
     background-color: #3E4F4C;
     border-radius: 10px;
-    margin: 0.5rem;
+    margin: 0.2rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+  }
+  .product img{
+    width: 100px;
   }
 }
