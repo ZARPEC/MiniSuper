@@ -1,6 +1,7 @@
 <Div id="homeMain">
-    <div class="inputSearch" id="inputHome">
-        <input type="text" name="Search" id="searchProd">
+    <div class="inputSearch"  >
+        <input type="text" placeholder="Buscar producto" style="margin-bottom: 0px;">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
     <div id="promos">
         <div class="slidesMain">
@@ -50,42 +51,42 @@
         </div>
         <div class="productR">
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" >
+                <img src="./assets/Images/products/aceite.webp" alt="">
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" >
+                <img src="./assets/Images/products/aceite.webp" alt="">
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" >
+                <img src="./assets/Images/products/aceite.webp" alt="">
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" >
+                <img src="./assets/Images/products/aceite.webp" alt="">
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" >
+                <img src="./assets/Images/products/aceite.webp" alt="">
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>
                 <button>Agregar</button>
             </div>
             <div class="product">
-                <img src="./assets/Images/products/aceite.webp" alt="" >
+                <img src="./assets/Images/products/aceite.webp" alt="">
                 <p>Precio</p>
                 <p>Descripción</p>
                 <p>Tamaño</p>

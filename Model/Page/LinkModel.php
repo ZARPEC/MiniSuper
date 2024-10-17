@@ -10,8 +10,8 @@ class LinkModel{
             "homeUser" => "view/user/homeU.php",
             "login" => "View/user/login.php",
             "signUp" => "View/user/SignUp.php",
+            "logout" => "View/user/logout.php",
             default => "View/pages/error.php"
-
         };
         return $GeLink;
     }

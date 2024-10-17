@@ -1,8 +1,8 @@
 @media only screen and (min-width: 901px) {
 
   .container {
-    width: 350px;
-    height: 250px;
+    width: 50%;
+    height: 50%;
     background-color: #DFE5E4;
     padding: 30px;
     border-radius: 50px;
@@ -18,16 +18,16 @@
     border-radius: 50%;
     background-color: #e0e0e0;
     border: 10px #2c44429f solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 .user i {
-    font-size: 70px;
+    font-size: 65px;
     color: #000;
-    position: relative;
-    top: 10px;
-    left: 20px;
 
 }
 
@@ -173,6 +173,12 @@ button:hover {
 
   .inputSearch {
     margin: 10px;
+    grid-area: 1 / 1 / 2 / 6; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .inputSearch > input {
