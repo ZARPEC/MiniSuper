@@ -9,6 +9,7 @@
         <div class="elemenBar">
             <ul>
             <li class=''><a href='?action=home'><i class='fa-solid fa-star'></i>Inicio</a></li>
+            <li class=''><a href='?action=products&category=Belleza'><i class='fa-solid fa-star'></i>Categorias</a></li>
                 <?php
                 if (!empty($_SESSION['user'])) {
                     echo "
@@ -20,7 +21,7 @@
                     ";
                 }
                 ?>
-                <li><a href='#'><i class='fa-solid fa-star'></i> Carrito</a></li>
+                <li><a href='?action=shopCart'><i class='fa-solid fa-star'></i> Carrito</a></li>
                 <?php
                 if (!empty($_SESSION['user'])) {
                     echo "

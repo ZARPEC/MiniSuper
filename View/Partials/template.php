@@ -21,6 +21,8 @@ ob_start();
     <link rel="stylesheet" href="assets/css/SidebarStyle.css">
    <script src="https://kit.fontawesome.com/19795a1502.js" crossorigin="anonymous"></script>
    <script src="assets/Js/rederigir.js"></script>
+   <script src="assets/Js/ShopCart.js"></script>
+   <script src="assets/Js/CargarDepartamento.js"></script>
    
 </head>
 

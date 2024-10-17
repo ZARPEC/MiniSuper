@@ -47,7 +47,7 @@
         <div class="buttonsArea">
             <button>Recomendados</button>
             <button>Ofertas</button>
-            <button>Categorias</button>
+            <a href="?action=products&category=Belleza" ><button>Categorias</button></a>
         </div>
         <div class="productR">
             <div class="product">

@@ -72,7 +72,6 @@ class User
                     $_SESSION['apellido'] = $respuesta['apellido'];
                     $_SESSION['idUsuairo'] = $respuesta['idUsuario'];
                     $_SESSION['rol'] = $respuesta['rol'];
-                    var_dump($_SESSION['rol']);
                     return true;
                 } else {
                     echo "<h1>error en los credenciales</h1>";
