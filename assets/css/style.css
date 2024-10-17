@@ -9,6 +9,15 @@ body {
 }
 
 @media only screen and (min-width: 901px) {
+  #MainProducL {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0 repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+  }
+
   #homeMain {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 0 repeat(2, 1fr);
@@ -55,12 +64,11 @@ body {
 
   .slides img {
     width: 100%; /* O ajusta a un tamaño fijo, como 300px por ejemplo */
-  height: 300px; /* Altura fija */
-  object-fit: contain; 
+    height: 300px; /* Altura fija */
+    object-fit: contain;
   }
 
   .slidesCo {
-   
     width: 95%;
 
     position: relative;
@@ -153,7 +161,7 @@ body {
     animation-duration: 1.5s;
   }
 
-  .promoStatic{
+  .promoStatic {
     background-color: #607a76;
     border-radius: 1rem;
     height: 50%;
@@ -161,9 +169,8 @@ body {
     display: flex;
     justify-items: center;
     justify-content: center;
-
   }
-  .containerStatic{
+  .containerStatic {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -172,7 +179,7 @@ body {
     overflow: hidden;
     width: 90%;
   }
-  .containerStatic img{
+  .containerStatic img {
     width: 100%;
     height: 95%;
   }
@@ -188,17 +195,17 @@ body {
 
   /* estilos productos recomendados*/
 
-  .buttonsArea{
+  .buttonsArea {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin:0.5rem
+    margin: 0.5rem;
   }
-  .buttonsArea button{
+  .buttonsArea button {
     height: 100%;
   }
 
-  .productR{
+  .productR {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -208,9 +215,9 @@ body {
     height: 70%;
   }
 
-  .product{
+  .product {
     color: white;
-    background-color: #3E4F4C;
+    background-color: #3e4f4c;
     border-radius: 10px;
     margin: 0.2rem;
     display: flex;
@@ -219,7 +226,83 @@ body {
     align-items: center;
     padding: 10px;
   }
-  .product img{
+  .product img {
     width: 100px;
+  }
+
+  .containerCat {
+    grid-area: 1 / 1 / 6 / 2;
+    width: 100%;
+    height: 100%;
+  }
+  .list-group li {
+    width: 100%;
+    margin: 0.5rem;
+  }
+
+  .listCat {
+    width: 100%;
+  }
+
+  #containerSubC {
+    grid-area: 1 / 2 / 3 / 6;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #containerProd {
+    grid-area: 3 / 2 / 6 / 6;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #containerProd h5 {
+    align-self: center;
+  }
+
+  .Product {
+    width: 90%;
+  }
+
+  #mainCart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0 repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+
+  }
+
+  #cart {
+    grid-area: 1 / 1 / 7 / 3;
+    width: 100%;
+    overflow: hidden;
+  }
+  #datosCl {
+    grid-area: 1 / 4 / 3 / 6;
+    width: 100%;
+  }
+  #datosEnvio {
+    grid-area: 3 / 4 / 5 / 6;
+    width: 100%;
+  }
+  #detaPagos {
+    grid-area: 5 / 4 / 7 / 6;
+    width: 100%;
+  }
+
+  .DetallePago div{
+    height: 30px;
+  }
+  .DetallePago div>input,label{
+    height: 10%;
+    font-size: small;
   }
 }
