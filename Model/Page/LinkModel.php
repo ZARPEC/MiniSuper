@@ -11,6 +11,8 @@ class LinkModel{
             "login" => "View/user/login.php",
             "signUp" => "View/user/SignUp.php",
             "logout" => "View/user/logout.php",
+            "products" => "View/Product/ProductList.php",
+            "shopCart" => "View/Product/ShopCart.php",
             default => "View/pages/error.php"
         };
         return $GeLink;
