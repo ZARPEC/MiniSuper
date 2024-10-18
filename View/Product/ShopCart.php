@@ -1,5 +1,9 @@
 <?php
 use Controller\UserController\User;
+use Controller\FacturaController\Factura;
+use Model\PaymentModel\Payment;
+
+$factura = new Payment;
 
 ?>
 <div id="mainCart" class="mt-5">
@@ -116,7 +120,7 @@ use Controller\UserController\User;
             <?php
             if (!empty($_SESSION['user'])) {
                 echo "
-            <form method='post'>
+            <form method='post' id='checkout-form'>
                 <div id='payment-details' class='DetallePago'>
                     <div class='' style='display: flex; align-items:center;'>
                         <label for='nombreTarjeta' class='form-label'>Nombre en la Tarjeta</label>
@@ -148,5 +152,12 @@ use Controller\UserController\User;
             </form>
             ";
             } ?>
+
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $factura->payment();
+            }
+
+            ?>
         </div>
     </div>

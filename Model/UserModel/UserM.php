@@ -54,7 +54,7 @@ class UserM
 
     public static function login($datos)
     {
-        $stmt = Conexion::conectar()->prepare("SELECT idUsuario, user, password, Cliente.nombre, cliente.apellido, rol.rol
+        $stmt = Conexion::conectar()->prepare("SELECT idUsuario, user, password,Cliente.idCliente, Cliente.nombre, cliente.apellido, rol.rol
                                                 FROM usuario INNER JOIN cliente ON cliente.fkusuario = usuario.idUsuario
                                                 INNER JOIN rol ON usuario.fkRol = rol.idRol
                                                 WHERE user=:usuario");

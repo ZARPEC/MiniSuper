@@ -70,8 +70,9 @@ class User
                     $_SESSION['user'] = $respuesta['user'];
                     $_SESSION['nombre'] = $respuesta['nombre'];
                     $_SESSION['apellido'] = $respuesta['apellido'];
-                    $_SESSION['idUsuairo'] = $respuesta['idUsuario'];
+                    $_SESSION['idUsuario'] = $respuesta['idUsuario'];
                     $_SESSION['rol'] = $respuesta['rol'];
+                    $_SESSION['idCliente'] = $respuesta['idCliente'];
                     return true;
                 } else {
                     echo "<h1>error en los credenciales</h1>";
