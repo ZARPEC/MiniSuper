@@ -62,14 +62,10 @@ class Payment
                     $addfactura->indetalles($productos);
                 }
 
-                if ($addfactura == false) {
-                    $tarjetaEnmascarada = '**** **** **** ' . substr($numeroTarjeta, -4);
+                $tarjetaEnmascarada = '**** **** **** ' . substr($numeroTarjeta, -4);
 
-                    header("Location: ?action=paymentsuces&tarjeta=' . $tarjetaEnmascarada");
-                } else {
-                    echo "<h3>Aaaaaalgoo malo paso</h3>";
+                header("Location: ?action=paymentsuces&tarjeta=' . $tarjetaEnmascarada");
 
-                }
             } else {
                 echo "Pago fallido. " . (isset($jsonResponse['error']) ? $jsonResponse['error'] : "Verifica la información.");
             }

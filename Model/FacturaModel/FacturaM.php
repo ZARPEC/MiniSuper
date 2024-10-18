@@ -39,20 +39,19 @@ class FacturaM
 
         try {
             foreach ($detalles as $detalle) {
-                $stmt = Conexion::conectar()->prepare("INSERT INTO DetallesFactura ( FkPruductoFac, Cantidad, FkFactura)
+                $stmt = Conexion::conectar()->prepare("INSERT INTO DetallesFactura (FkPruductoFac, Cantidad, FkFactura)
                        VALUES ( :FkPruductoFac, :Cantidad, :FkFactura)");
-                $stmt->bindParam("FkProductoFac", $detalle['id'], \PDO::PARAM_INT);
+                $stmt->bindParam("FkPruductoFac", $detalle['id'], \PDO::PARAM_INT);
                 $stmt->bindParam(":Cantidad", $detalle['cantidad'], \PDO::PARAM_INT);
-                $stmt->bindParam(":FkMetodoPago", $idFactura, \PDO::PARAM_INT);
+                $stmt->bindParam(":FkFactura", $idFactura, \PDO::PARAM_INT);
 
                 $stmt->execute();
-                return $stmt ? true : false;
+
             }
+            return $stmt ? true : false;
         } catch (\Throwable $th) {
             echo $th;
             return false;
-        } finally {
-            return true;
         }
 
     }
@@ -66,8 +65,9 @@ class FacturaM
         $sql_max_id = "SELECT NVL(MAX(idDatosFactura), 0) AS max_id FROM Factura";
         $conn = Conexion::conectar()->prepare($sql_max_id);
         $conn->execute();
-        $conn->fetch();
-        $maxId = $conn;
+        $result = $conn->fetch();
+
+        $maxId = $result['max_id'];
 
         return $maxId;
     }

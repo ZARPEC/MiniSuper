@@ -130,7 +130,7 @@ $totalProd = count($produ);
                                     <div class='col rounded'>
                                         <a href='?action=products&category={$CategoryGet}&SubCat={$SubCategories[$j]['Nsubcategoria']}' >
                                         <div class='category-circle'>
-                                            <img src='Assets/Img/Category/SubCategory/{$CategoryGet}/{$SubCategories[$j]['Nsubcategoria']}.png' alt='Subcategoría'>
+                                            <img src='Assets/Images/Category/SubCategory/{$CategoryGet}/{$SubCategories[$j]['Nsubcategoria']}.png' alt='Subcategoría'>
                                         </div>
                                         </a>
                                         <p class='category-text'>{$SubCategories[$j]['Nsubcategoria']}</p>
@@ -168,7 +168,7 @@ $totalProd = count($produ);
                                     <div class='col-md-4 mb-4'>
                                     <a href='?action=ProductView&idProduct={$produ[$j]['idProducto']}' class='card-link' style='text-decoration: none; color: inherit;'>
                                         <div class='card hover-effect'>
-                                            <img src='Assets/Img/Category/SubCategory/{$CategoryGet}/Products/{$produ[$j]['Nsubcategoria']}.png' class='card-img-top' alt='Producto 1'>
+                                            <img src='Assets/Images/Category/SubCategory/{$CategoryGet}/Products/{$produ[$j]['Nsubcategoria']}.png' class='card-img-top' alt='Producto 1'>
                                             <div class='card-body text-center'>
                                                 <h5 class='card-title'>{$produ[$j]['NombreProd']}</h5>
                                                 <p class='card-text'>{$produ[$j]['CantMedida']} {$produ[$j]['UNIDADMEDIDA']}</p>

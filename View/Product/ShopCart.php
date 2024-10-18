@@ -53,11 +53,11 @@ $factura = new Payment;
             <form method='post'>
                 <div class='mb-3' style='display: flex; align-items:center;'>
                     <label for='nombreCl' class='form-label'>Nombre</label>
-                    <input type='text' class='form-control' id='nombreCl' name='nombreCl' required>
+                    <input type='text' class='form-control' id='nombreCl' name='nombreCl' value='{$_SESSION['nombre']}' required>
                 </div>
                 <div class='mb-3' style='display: flex; align-items:center;'>
                     <label for='apellido' class='form-label'>Apellido</label>
-                    <input type='text' class='form-control' id='apellido' name='apellido' required>
+                    <input type='text' class='form-control' id='apellido' name='apellido' value='{$_SESSION['apellido']}' required>
                 </div>
                 <div class='mb-3' style='display: flex; align-items:center;'>
                     <label for='telefono' class='form-label'>Telefono</label>

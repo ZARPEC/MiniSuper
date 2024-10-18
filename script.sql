@@ -158,3 +158,29 @@ INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, 
 VALUES 
 ('Proteína en polvo', 3, '1', 450.00, 20, 80),
 ('Creatina', 4, '500', 300.00, 20, 100);
+
+
+SELECT 
+    C.idCliente,                                   -- ID del cliente
+    C.Nombre AS ClienteNombre,                     -- Nombre del cliente
+    C.Apellido AS ClienteApellido,                 -- Apellido del cliente
+    C.Telefono,                                    -- Teléfono del cliente
+    C.Correo,                                      -- Correo electrónico del cliente
+    F.idDatosFactura AS IdFactura,                 -- ID de la factura
+    DATE(F.FechaFactura) AS FechaFactura,          -- Fecha de la factura sin hora
+    DF.Cantidad,                                   -- Cantidad del producto
+    P.NombreProd AS ProductoComprado,              -- Nombre del producto
+    P.Precio AS PrecioProducto,                    -- Precio del producto
+    (DF.Cantidad * P.Precio) AS Subtotal           -- Subtotal por producto
+FROM 
+    Cliente C
+JOIN 
+    Factura F ON C.idCliente = F.FkCliente
+JOIN 
+    DetallesFactura DF ON F.idDatosFactura = DF.FkFactura
+JOIN 
+    Producto P ON DF.FkPruductoFac = P.idProducto
+WHERE 
+    C.idCliente = 7 OR F.idDatosFactura = 0
+ORDER BY 
+    F.idDatosFactura, P.NombreProd;
