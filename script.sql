@@ -14,6 +14,17 @@ INSERT INTO `subcategoria` (`idSubCategoria`, `NSubCategoria`, `SubCategoriaP`, 
 (9, 'Protección Solar', NULL, '1'),
 (10, 'Afeitado', NULL, '1');
 
+INSERT INTO `subcategoria` (`idSubCategoria`, `NSubCategoria`, `SubCategoriaP`, `FkCategoria`) 
+VALUES
+(21, 'Refrigeración', NULL, '3'),
+(22, 'Cocción', NULL, '3'),
+(23, 'Preparación de Alimentos', NULL, '3'),
+(24, 'Cafetería', NULL, '3'),
+(25, 'Lavado', NULL, '3'),
+(26, 'Aspiración', NULL, '3'),
+(27, 'Planchado', NULL, '3'),
+(28, 'Cuidado de Ropa', NULL, '3');
+
 
 insert into UnidadMedida (idUnidadMedida, UnidadMedida) values (1, 'kg');
 insert into UnidadMedida (idUnidadMedida, UnidadMedida) values (2, 'ft');
@@ -87,6 +98,63 @@ INSERT INTO `Producto` (`idProducto`, `NombreProd`, `FkUnidadMedida`, `CantMedid
 (40, 'Corrector de Ojeras', 6, '15', 50.00, 1, 120),
 (41, 'Rubor en Polvo', 8, '1', 45.00, 1, 80),
 (42, 'Delineador de Ojos', 8, '1', 35.00, 1, 200);
+
+-- Refrigeración
+INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, `FkSubCat`, `existencias`) VALUES
+('Congelador horizontal', 8, '1', 3000.00, 21, 50),
+('Congelador vertical', 8, '1', 2800.00, 21, 30),
+('Refrigerador de una puerta', 8, '1', 2500.00, 21, 40),
+('Minibar', 8, '1', 1500.00, 21, 25),
+('Enfriador de agua', 8, '1', 1200.00, 21, 20);
+
+-- Cocción
+INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, `FkSubCat`, `existencias`) VALUES
+('Horno microondas', 8, '1', 1000.00, 22, 60),
+('Estufa a gas', 8, '1', 4000.00, 22, 15),
+('Estufa eléctrica', 8, '1', 3800.00, 22, 20),
+('Freidora de aire', 8, '1', 1500.00, 22, 30),
+('Máquina de hacer wafles', 8, '1', 800.00, 22, 40);
+
+-- Preparación de alimentos
+INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, `FkSubCat`, `existencias`) VALUES
+('Batidora de mano', 8, '1', 300.00, 23, 70),
+('Licuadora', 8, '1', 600.00, 23, 60),
+('Procesador de alimentos', 8, '1', 900.00, 23, 50),
+('Tostadora de pan', 8, '1', 400.00, 23, 80),
+('Máquina de hacer helados', 8, '1', 1500.00, 23, 35);
+
+-- Cafetería
+INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, `FkSubCat`, `existencias`) VALUES
+('Cafetera de cápsulas', 8, '1', 1200.00, 24, 25),
+('Cafetera espresso', 8, '1', 1800.00, 24, 20),
+('Cafetera francesa (French Press)', 8, '1', 500.00, 24, 50),
+('Hervidor eléctrico', 8, '1', 300.00, 24, 40),
+('Espumador de leche', 8, '1', 200.00, 24, 30);
+
+-- Lavado
+INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, `FkSubCat`, `existencias`) VALUES
+('Lavadora automática', 8, '1', 4500.00, 25, 10),
+('Lavadora portátil', 8, '1', 2500.00, 25, 20),
+('Secadora eléctrica', 8, '1', 3500.00, 25, 15),
+('Secadora a gas', 8, '1', 3800.00, 25, 10),
+('Lavasecadora', 8, '1', 5000.00, 25, 5);
+
+-- Aspiración
+INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, `FkSubCat`, `existencias`) VALUES
+('Aspiradora vertical', 8, '1', 1800.00, 26, 50),
+('Aspiradora de mano', 8, '1', 1000.00, 26, 70),
+('Aspiradora robot', 8, '1', 3500.00, 26, 30),
+('Aspiradora para auto', 8, '1', 900.00, 26, 80),
+('Limpiador para alfombras', 8, '1', 4000.00, 26, 20);
+
+-- Planchado y cuidado de ropa
+INSERT INTO `Producto` (`NombreProd`, `FkUnidadMedida`, `CantMedida`, `Precio`, `FkSubCat`, `existencias`) VALUES
+('Plancha de vapor', 8, '1', 500.00, 27, 80),
+('Plancha seca', 8, '1', 400.00, 27, 100),
+('Vaporizador de prendas', 8, '1', 1200.00, 27, 40),
+('Plancha inalámbrica', 8, '1', 1500.00, 27, 30),
+('Plancha inteligente', 8, '1', 2500.00, 27, 20);
+
 
 insert into Subcategoria (idSubcategoria, Nsubcategoria, fkCategoria) values (11, 'Balones', 2);
 insert into Subcategoria (idSubcategoria, Nsubcategoria, fkCategoria) values (12, 'Ropa deportiva', 2);
