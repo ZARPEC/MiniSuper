@@ -5,23 +5,6 @@ function guardarCarrito() {
   sessionStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
-// Función para agregar un producto al carrito
-function agregarAlCarrito(producto) {
-  // Verificar si el producto ya existe en el carrito
-  const existeProducto = carrito.find((item) => item.id === producto.id);
-
-  if (existeProducto) {
-    // Si el producto ya existe, simplemente incrementamos la cantidad
-    existeProducto.cantidad += 1;
-  } else {
-    // Si el producto no está en el carrito, lo añadimos
-    carrito.push({ ...producto });
-    alert("Se Agrego al carrito el porducto " + producto.nombre);
-  }
-  guardarCarrito();
-  // Mostrar el carrito en consola (puedes actualizar el HTML también)
-  console.log(carrito);
-}
 
 function mostrarCarrito() {
   const cartItems = document.getElementById("cart-items");
@@ -51,6 +34,26 @@ function mostrarCarrito() {
   document.getElementById("subtotal").textContent = `Q${subtotal.toFixed(2)}`;
   document.getElementById("total").textContent = `Q${total.toFixed(2)}`;
   hiddenProduct();
+}
+
+
+// Función para agregar un producto al carrito
+function agregarAlCarrito(producto) {
+  // Verificar si el producto ya existe en el carrito
+  const existeProducto = carrito.find((item) => item.id === producto.id);
+
+  if (existeProducto) {
+    // Si el producto ya existe, simplemente incrementamos la cantidad
+    existeProducto.cantidad += 1;
+  } else {
+    // Si el producto no está en el carrito, lo añadimos
+    carrito.push({ ...producto });
+    alert("Se Agrego al carrito el porducto " + producto.nombre);
+  }
+  guardarCarrito();
+  mostrarCarrito();
+  // Mostrar el carrito en consola (puedes actualizar el HTML también)
+  console.log(carrito);
 }
 
 // Función para actualizar la cantidad de un producto

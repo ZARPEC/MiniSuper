@@ -277,7 +277,6 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 100%;
-
   }
 
   #cart {
@@ -298,11 +297,43 @@ body {
     width: 100%;
   }
 
-  .DetallePago div{
+  .DetallePago div {
     height: 30px;
   }
-  .DetallePago div>input,label{
+  .DetallePago div > input,
+  label {
     height: 10%;
     font-size: small;
+  }
+
+  #MainAdminC {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0 repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+  }
+
+  #productsLs {
+    grid-area: 1 / 1 / 6 / 3;
+    width: 100%;
+    height: 100%;
+  }
+
+  #productsLs>div {
+  height: 70%;
+  }
+
+  #detallesAd {
+    grid-area: 1 / 4 / 6 / 6;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tab{
+    overflow: scroll;
+    height: 300px;
+    overflow-x: hidden;
   }
 }
