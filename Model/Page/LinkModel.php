@@ -14,6 +14,7 @@ class LinkModel{
             "products" => "View/Product/ProductList.php",
             "shopCart" => "View/Product/ShopCart.php",
             "paymentsuces" => "View/pages/paymentSuccess.php",
+            "homeAdmin" => "View/Admin/homeAdmin.php",
             default => "View/pages/error.php"
         };
         return $GeLink;

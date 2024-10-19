@@ -78,6 +78,46 @@ class ProductM
         return $result;
     }
 
+    public static function ShowAllProduct()
+    {
+        $conn = Conexion::conectar();
+
+        // Verifica la conexión
+        if (!$conn) {
+            echo "Error en la conexión a la base de datos";
+            return [];
+        }
+
+        $sql = "SELECT 
+                    p.idProducto,
+                    p.NombreProd,
+                    u.UNIDADMEDIDA,
+                    p.CantMedida,
+                    c.categoria,
+                    s.Nsubcategoria,
+                    p.precio,
+                    p.Existencias
+                FROM 
+                    Producto p
+                JOIN 
+                    Subcategoria s ON p.FkSubCat = s.idSubcategoria
+                JOIN 
+                    UnidadMedida u ON p.FkUnidadMedida = u.IDUNIDADMEDIDA
+                join CatProd c ON s.fkcategoria = c.idcatprod
+                ORDER BY p.NombreProd ASC";  // Se usa :subCat sin comillas para bind
+
+        $conn = Conexion::conectar()->prepare($sql);
+        $conn->execute();
+        $result = $conn->fetchall();
+
+        // Si no se obtienen resultados
+        if (empty($result)) {
+            echo "No Existe categoria";
+        }
+
+        return $result;
+    }
+
 }
 
 ?>

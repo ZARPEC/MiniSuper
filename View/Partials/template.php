@@ -23,6 +23,10 @@ ob_start();
    <script src="assets/Js/rederigir.js"></script>
    <script src="assets/Js/ShopCart.js"></script>
    <script src="assets/Js/CargarDepartamento.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+
    
 </head>
 

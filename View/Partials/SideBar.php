@@ -26,6 +26,9 @@
                 if (!empty($_SESSION['user'])) {
                     echo "
                 <li><a href='?action=logout'><i class='fa-solid fa-star'></i> Cerrar Sesión</a></li>";
+                } if(!empty($_SESSION['rol']) && $_SESSION['rol'] == 'Empleado'){
+                    echo "
+                    <li><a href='?action=homeAdmin'><i class='fa-solid fa-star'></i> Administrador</a></li>";
                 }
                 ?>
 

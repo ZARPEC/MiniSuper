@@ -37,4 +37,19 @@
 </div>
 <script>
     vaciarCarrito();
+    let url;
+    <?php
+    if (!empty($_SESSION['rol']) && $_SESSION['rol'] == 'Empleado') {
+        ?>
+
+        url = '?action=homeAdmin';
+
+        <?php
+    } else {
+        ?>
+        url = '?action=home';
+        <?php
+    }
+    ?>
+    redirigir(url);
 </script>

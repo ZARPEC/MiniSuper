@@ -13,7 +13,7 @@ class User
 
                 $rol = $_POST['rol'];
             } else {
-                $rol = 1;
+                $rol = 2;
             }
             $nombre = $_POST['nombre'];
             $apellido = $_POST['apellido'];

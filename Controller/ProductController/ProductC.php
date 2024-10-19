@@ -18,6 +18,11 @@ class ProductC
         $Sub = ProductM::ShowProduct($CategoryGet, $SubCategoryGet, );
         return $Sub;
     }
+    public function ShowAllProduct()
+    {
+        $Sub = ProductM::ShowAllProduct();
+        return $Sub;
+    }
 }
 
 

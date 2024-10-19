@@ -20,7 +20,7 @@ $user = new User;
           </div>
       </form>
       <div>
-        <a href="?action=signUp"><button type="" id="rg" href="" class="bs">Registrarse</button></a>
+        <a href="?action=signUp"><button type="button" id="rg" href="" class="bs">Registrarse</button></a>
       </div>
     </div>
     <div class="lpass">
