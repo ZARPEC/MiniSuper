@@ -12,9 +12,11 @@
             <li class=''><a href='?action=products&category=Belleza'><i class='fa-solid fa-star'></i>Categorias</a></li>
                 <?php
                 if (!empty($_SESSION['user'])) {
-                    echo "
+                   /* echo "
+
                 <li><a href='?action=homeUser'><i class='fa-solid fa-star'></i> Pedidos</a></li>
-                ";
+
+                ";*/
                 }else{
                     echo "
                     <li class=''><a href='?action=login'><i class='fa-solid fa-star'></i> iniciar Sesión</a></li>

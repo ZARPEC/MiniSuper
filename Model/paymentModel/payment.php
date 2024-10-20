@@ -53,7 +53,7 @@ class Payment
 
             // Decodificar la respuesta JSON
             $jsonResponse = json_decode($response, true);
-
+var_dump($data);
             // Verificar el estado del pago
             if ($jsonResponse['paymentStatus'] == 'true') {
 

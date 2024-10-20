@@ -54,10 +54,9 @@ class UserM
 
     public static function login($datos)
     {
-        $stmt = Conexion::conectar()->prepare("SELECT idUsuario, user, password,empleado.idEmpleado ,Cliente.idCliente, Cliente.nombre, cliente.apellido, rol.rol
+        $stmt = Conexion::conectar()->prepare("SELECT idUsuario, user, password,Cliente.idCliente, Cliente.nombre, cliente.apellido, rol.rol
                                                 FROM usuario INNER JOIN cliente ON cliente.fkusuario = usuario.idUsuario
                                                 INNER JOIN rol ON usuario.fkRol = rol.idRol
-                                                INNER JOIN empleado ON empleado.fkusuario = usuario.idUsuario
                                                 WHERE user=:usuario");
         $stmt->bindParam(":usuario", $datos['usuario'], \PDO::PARAM_STR);
         $stmt->execute();

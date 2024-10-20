@@ -1,8 +1,9 @@
 <Div id="homeMain">
+    <!--
     <div class="inputSearch"  >
         <input type="text" placeholder="Buscar producto" style="margin-bottom: 0px;">
         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
+    </div>-->
     <div id="promos">
         <div class="slidesMain">
             <div class="slidesCo">
@@ -45,8 +46,7 @@
     </div>
     <div class="quickAccess">
         <div class="buttonsArea">
-            <button>Recomendados</button>
-            <button>Ofertas</button>
+
             <a href="?action=products&category=Belleza" ><button>Categorias</button></a>
         </div>
         <div class="productR">

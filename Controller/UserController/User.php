@@ -13,7 +13,7 @@ class User
 
                 $rol = $_POST['rol'];
             } else {
-                $rol = 2;
+                $rol = 1;
             }
             $nombre = $_POST['nombre'];
             $apellido = $_POST['apellido'];
@@ -64,6 +64,7 @@ class User
             );
             $respuesta = UserM::login($datos);
             //comparar contraseña cifrada con la de la bd
+
             if (!empty($respuesta['user'])) {
                 $resultado = password_verify($password, $respuesta['password']);
                 if ($resultado) { //Hubo coincidencia

@@ -37,7 +37,7 @@ $user = new User;
         </div>";
             } else if ($resultado) {
                 echo "<div class='alert alert-dismissible alert-success mt-5' role='alert' style='display: flex; flex-direction: row; align-content: center; justify-content: center;'>
-                        Usuario creado correctamente
+                        Se ha iniciado sesión correctamente. Se te redirigirá en unos segundos.
 
                          </div>";
 
