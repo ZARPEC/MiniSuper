@@ -21,6 +21,7 @@ class ProductC
     public function ShowAllProduct()
     {
         $Sub = ProductM::ShowAllProduct();
+        header('Content-Type: application/json');
         return $Sub;
     }
 }
